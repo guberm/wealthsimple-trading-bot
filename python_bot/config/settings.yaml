@@ -1,0 +1,46 @@
+wealthsimple:
+  base_url: "https://trade-service.wealthsimple.com"
+
+trading:
+  mode: "dry_run"                # "dry_run" or "live"
+  live_mode_confirmation: false  # must also be true for live trading
+  account_type: "ca_tfsa"        # "ca_tfsa", "ca_rrsp", "ca_non_registered", "ca_crypto"
+
+schedule:
+  enabled: true
+  # Runs at 9:35, 11:30, 13:30, 15:30 ET on weekdays
+  run_times:
+    - "09:35"
+    - "11:30"
+    - "13:30"
+    - "15:30"
+  timezone: "America/Toronto"
+  days: ["mon", "tue", "wed", "thu", "fri"]
+
+stock_picker:
+  num_picks: 7
+  min_market_cap_millions: 500
+  min_avg_volume: 100000
+  lookback_days: 90
+  sector_diversity: true
+  max_per_sector: 2
+  prefer_etfs: true
+  exchange_filter: "TSX"
+
+rebalancer:
+  weight_strategy: "equal"
+  drift_threshold_pct: 5.0
+  min_trade_value_cad: 1.00
+
+safety:
+  max_single_trade_cad: 5000.00
+  max_daily_trades: 20
+  rate_limit_per_hour: 6
+  rate_limit_window_seconds: 3600
+  require_confirmation_above_cad: 1000.00
+
+logging:
+  level: "INFO"
+  file: "logs/trading_bot.log"
+  max_size_mb: 10
+  backup_count: 5

@@ -1,0 +1,36 @@
+# Curated universe of TSX-listed ETFs and stocks eligible for selection.
+# The stock picker scores FROM this universe and picks the top N.
+
+etfs:
+  - symbol: "XIC.TO"     # iShares S&P/TSX Capped Composite
+  - symbol: "XIU.TO"     # iShares S&P/TSX 60
+  - symbol: "ZSP.TO"     # BMO S&P 500
+  - symbol: "VFV.TO"     # Vanguard S&P 500
+  - symbol: "XGRO.TO"    # iShares Growth Portfolio
+  - symbol: "VGRO.TO"    # Vanguard Growth Portfolio
+  - symbol: "ZAG.TO"     # BMO Aggregate Bond
+  - symbol: "XBB.TO"     # iShares Core Canadian Bond
+  - symbol: "VCN.TO"     # Vanguard FTSE Canada
+  - symbol: "ZEB.TO"     # BMO Equal Weight Banks
+  - symbol: "XEI.TO"     # iShares Core Equity Income
+  - symbol: "ZDV.TO"     # BMO Canadian Dividend
+  - symbol: "VDY.TO"     # Vanguard FTSE Canadian High Div Yield
+  - symbol: "ZRE.TO"     # BMO Equal Weight REITs
+  - symbol: "XRE.TO"     # iShares S&P/TSX Capped REIT
+
+stocks:
+  - symbol: "RY.TO"      # Royal Bank
+  - symbol: "TD.TO"      # TD Bank
+  - symbol: "BNS.TO"     # Bank of Nova Scotia
+  - symbol: "ENB.TO"     # Enbridge
+  - symbol: "CNR.TO"     # CN Rail
+  - symbol: "CP.TO"      # CP Rail
+  - symbol: "SU.TO"      # Suncor
+  - symbol: "BAM.TO"     # Brookfield Asset Management
+  - symbol: "SHOP.TO"    # Shopify
+  - symbol: "BCE.TO"     # BCE Inc
+  - symbol: "T.TO"       # Telus
+  - symbol: "MFC.TO"     # Manulife
+  - symbol: "CSU.TO"     # Constellation Software
+  - symbol: "ATD.TO"     # Alimentation Couche-Tard
+  - symbol: "WCN.TO"     # Waste Connections
